@@ -1,0 +1,48 @@
+* {
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #1d2430;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.menu {
+    margin-left: auto;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 1rem;
+    list-style-type: none;
+}
+    
+
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover{
+    color: aqua;
+}
