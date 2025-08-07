@@ -1,48 +1,255 @@
 * {
-    font-family: "Inter", sans-serif;
+    font-family: "Rubik", sans-serif;
     color: white;
 }
 
 body {
-    background-color: #1d2430;
+    background-color: #080808;
     min-height: 100vh;
     margin: 0 auto;
 }
 
-/* Navbar */
+/* Home */
 
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar-container {
-    display: flex;
-    align-items: center;
-    padding-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.menu {
-    margin-left: auto;
-}
 .items{
+    width: 85%;
+    background-color:#1B1B1B ;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0px 0px 1rem 1rem;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    letter-spacing: 3px;
+}
+.item{
+    list-style: none;
 }
 
-.item {
-    margin: 1rem;
-    list-style-type: none;
-}
-    
-
-
-.link {
+li a{
     text-decoration: none;
+    color: #9C9C9C;
 }
 
-.link:hover{
-    color: aqua;
+/*Joynul Abedin */
+
+.home{
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 6rem;
+    gap: 8rem;
+}
+h1 {
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+}
+.name{
+    width: 50%;
+}
+.name h3{
+    margin-bottom: -3rem;
+    letter-spacing: 3px;
+    color: #5F7D8A;
+    font-size: 40px;
+    font-weight: 400;
+}
+.name p{
+    font-size: 24px;
+    text-wrap: balance;
+    font-weight: 100;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color: gray; 
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.name button {
+    padding: 20px 40px;
+    color: white;
+    background-color: #3F8E00;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    border: solid 1px rgb(153, 255, 0);
+    cursor: pointer;
+    box-shadow: 0  5px 25px rgba(153, 255, 0, 0.404);
+}
+
+.photo{
+    margin: 0 auto;
+}
+
+.photo img {
+    width: 450px;
+    margin-top: 2rem;
+    border-radius: 50%;
+    box-shadow: 0  5px 25px #5F7D8A;
+}
+
+
+
+
+
+
+
+/*Laptop*/
+@media (min-width:1440px) {
+   .home{
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 6rem;
+    gap: 6rem;
+}
+h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+}
+
+}
+.name h3{
+    margin-bottom: -3rem;
+    letter-spacing: 3px;
+    color: #5F7D8A;
+    font-size: 30px;
+    font-weight: 400;
+}
+.name p{
+    font-size: 20px;
+    text-wrap: balance;
+    font-weight: 100;
+}
+
+.name button {
+    padding: 15px 30px;
+}
+
+
+.photo img {
+    width: 400px;
+    margin-left: 2rem;
+}
+
+
+
+/* ---------- Responsive Media Queries ---------- */
+
+/* For tablets and smaller laptops (≤1024px) */
+@media (max-width: 1024px) {
+    .items{
+    width: 70%;
+    background-color:#1B1B1B ;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0px 0px 1rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: 3px;
+}
+
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width: 90%;
+    margin-top: 4rem;
+  }
+
+  .name, .photo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .name h1 {
+    font-size: 60px;
+  }
+
+  .name h3 {
+    font-size: 30px;
+    margin-bottom: -2rem;
+  }
+
+  .name p {
+    font-size: 20px;
+  }
+
+  .photo img {
+    width: 350px;
+  }
+
+  .items {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .item {
+    padding: 0.5rem 0;
+  }
+}
+
+/* For mobile phones (≤768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .name h3 {
+    font-size: 24px;
+  }
+
+  .name p {
+    font-size: 18px;
+    padding: 0 1rem;
+  }
+
+  .name button {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+
+  .photo img {
+    width: 250px;
+  }
+
+  .items {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .home {
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+}
+
+/* For very small devices (≤480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .name h3 {
+    font-size: 20px;
+  }
+
+  .name p {
+    font-size: 16px;
+  }
+
+  .name button {
+    padding: 12px 24px;
+  }
+
+  .photo img {
+    width: 200px;
+  }
 }
